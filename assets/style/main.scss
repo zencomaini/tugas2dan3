@@ -1,0 +1,887 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+$color-primary: #FE8C12;
+$color-secondary: #0A0A0B;
+$color-conten: #FFFFFF;
+$font-family: 'Open Sans', sans-serif;
+$font-label: 'Open Sans' , sans-serif;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: $font-family;
+}
+
+header {
+
+  #main-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: $font-family;
+    width: 80%;
+    height: 80px;
+    left: 10%;
+
+    .main-logo {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 150px;
+
+      .main-brand {
+        position: absolute;
+        display: flex;
+        color: $color-secondary;
+        text-transform: lowercase;
+        font-family: $font-label;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 46px;
+        left: 40%;
+        top: 2px;
+      }
+    }
+
+    .main-call {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      left: 38%;
+      top: 5px;
+      
+      .call-icon {
+        position: absolute;
+        top: 20px;
+
+        .call-numb {
+          position: absolute;
+          left: 50px;
+          top: 0;
+
+          small {
+            position: absolute;
+            text-transform: uppercase;
+            font-family: $font-family;
+            width: 100px;
+            height: 50px;
+            left: 30%;
+          }
+
+          h5 {
+            position: absolute;
+            font-family: $font-family;
+            width: 150px;
+            font-size: 14px;
+            left: 48%;
+            top: 18px;
+          }
+        }
+      }
+      
+    }
+
+    .main-maill {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      left: 60%;
+      top: 5px;
+
+      .maill-icon {
+        position: absolute;
+        top: 20px;
+
+        .maill-adrs {
+          position: absolute;
+          position: absolute;
+          left: 50px;
+          top: 0;
+
+          small {
+            position: absolute;
+            text-transform: uppercase;
+            font-family: $font-family;
+            width: 100px;
+            left: 65%;
+          }
+
+          h5 {
+            position: absolute;
+            font-family: $font-family;
+            font-size: 14px;
+            width: 120px;
+            left: 65%;
+            top: 18px;
+          }
+        }
+      }
+
+    }
+
+    .btn-header {
+      position: absolute;
+      align-items: center;
+      left: 87%;
+
+      button {
+        justify-content: space-between;
+        color: $color-conten;
+        background-color: $color-primary;
+        border: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        width: 140px;
+        height: 50px;
+        padding: 2px;
+        gap: 15px;
+      
+        .bi-arrow-right-short {
+          margin: 8px;
+        }
+      }
+      button:hover {
+        cursor: pointer;
+        color: $color-secondary;
+      }
+    }
+
+  }
+}
+
+#main-menu {
+  position: relative;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-secondary;
+  width: 80%;
+  height: 60px;
+  top: 0px;
+  left: 10%;
+
+  nav .list-menu {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    color: $color-conten;
+    font-size: 14px;
+    left: 10px;
+    top: 10px;
+  }
+
+    .list {
+      margin: 10px;
+
+      a {
+        color: $color-conten;
+        text-decoration: none;
+      }
+  }
+
+  .list-menu a:hover {
+    cursor: pointer;
+    color: $color-primary;
+  }
+
+}
+
+#hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+#btn-search {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  right: 30%;
+  top: 100px;
+  
+  a {
+    color: $color-conten;
+  }
+}
+
+#btn-search a:hover {
+  cursor: pointer;
+  color: $color-primary;
+}
+
+#main-media-social {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  right: 12%;
+  top: 90px;
+
+  a {
+    color: $color-conten;
+    margin: 10px;
+  }
+}
+
+#main-media-social a:hover {
+  cursor: pointer;
+  color: $color-primary;
+}
+
+#content {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  top: -60px;
+  z-index: -1;
+
+  .slider_content {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    
+    .slider_video {
+      video {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 600px;
+      }
+    }
+
+    .slider-image {
+      position: absolute; 
+      width: 100%;
+      height: 600px;
+
+      .slide-img {
+        position: absolute;
+        list-style: none;
+        width: 100%;
+        height: 600px;
+
+        img {
+          position: absolute;
+          object-fit: cover;
+          width: 100%;
+          height: 600px;
+        }
+      }
+    }
+  }
+
+  .qoute-content {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+
+    .btn-quote {
+      background-color: $color-primary;
+      color: $color-conten;
+      text-transform: uppercase;
+      font-size: 11px;
+      border: none;
+      width: 110px;
+      height: 40px;
+
+      a {
+        text-decoration: none;
+        color: $color-conten;
+      }
+    }
+
+    .btn-play {
+      background-color: $color-conten;
+      border: none;
+      width: 40px;
+      height: 40px;
+      margin: 15px;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+    }
+    a:hover {
+      cursor: pointer;
+      color: $color-secondary;
+    }
+  }
+
+  .arrow-slider {
+    position: absolute;
+    right: 5%;
+    top: 80%;
+
+    i {
+      color: $color-primary;
+      font-size: 35px;
+      margin: 10px;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+    }
+  }
+
+  .arrow-slider i:hover {
+    cursor: pointer;
+    background-color: $color-primary;
+    color: $color-conten;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+}
+
+#solution {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-secondary;
+  width: 100%;
+  height: 100px;
+
+  h1 {
+    position: absolute;
+    color: $color-conten;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 20px;
+    top: 36px;
+    left: 10%;
+  }
+
+  button {
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    top: 30px;
+    right: 10%;
+  }
+}
+
+#content-footer {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  left: 10%;
+
+  .about-footer {
+    position: absolute;
+    width: 20%;
+    top: 20%;
+  }
+
+  .icon-footer-label span{
+    position: absolute;
+    font-size: 30px;
+    top: 0px;
+    left: 50px;
+    color: $color-secondary;
+  }
+
+  .text-info {
+    position: absolute;
+    top: 110%;
+    width: 200px;
+    font-size: 18px;
+    justify-content: left;
+    text-align: justify;
+  }
+
+  .medsos-footer {
+    position: absolute;
+    top: 270%;
+    width: 200px;
+    i {
+      margin: 15px;
+    }
+  }
+
+  .page-footer {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    .menu-left {
+      position: absolute;
+      list-style: none;
+      left: -15px;
+      height: 130px;
+      top: 40px;
+      list-style: none;
+      li {
+        margin: 10px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: $color-secondary;
+        text-transform: uppercase;
+      }
+    }
+
+    .menu-right {
+      position: absolute;
+      list-style: none;
+      width: 120px;
+      height: 100px;
+      top: 40px;
+      left: 100px;
+
+      li {
+        margin: 10px ;
+      }
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: $color-secondary;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .post-footer {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    .pos-top {
+      position: absolute;
+      top: 40px;
+
+      img {
+        width: 50px;
+      }
+      span {
+        position: absolute;
+        text-transform: uppercase;
+        color: $color-secondary;
+        left: 70px;
+        width: 120px;
+      }
+    }
+
+    .pos-bottom {
+      position: absolute;
+      width: 120px;
+      height: 100px;
+      top: 130px;
+
+      img {
+        width: 50px;
+      }
+      span {
+        position: absolute;
+        text-transform: uppercase;
+        color: $color-secondary;
+        left: 70px;
+        width: 120px;
+      }
+    }
+  }
+
+  .information-footer {
+    position: absolute;
+    text-transform: uppercase;
+    top: 20%;
+    right: 10%;
+
+    .footer-phone {
+      position: absolute;
+      top: 40px;
+
+      span {
+        position: absolute;
+        color: $color-secondary;
+        width: 100px;
+        left: 30px;
+      }
+    }
+
+    .footer-mail {
+      position: absolute;
+      top: 80px;
+
+      span {
+        position: absolute;
+        color: $color-secondary;
+        width: 100px;
+        left: 30px;
+      }
+    }
+
+    .footer-address {
+      position: absolute;
+      top: 120px;
+
+      span {
+        position: absolute;
+        color: $color-secondary;
+        width: 180px;
+        left: 30px;
+      }
+    }
+  }
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  width: 80%;
+  height: 50px;
+  left: 10%;
+
+  .copyright h3 {
+    display: flex;
+    color: $color-secondary;
+    font-size: 14px;
+  }
+
+  .menu-footer {
+    justify-content: space-between;
+    text-transform: uppercase;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+
+      li {
+        padding: 5px;
+        
+        a {
+          color: $color-secondary;
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.container-input {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  transform: translate(-50%, -50%);
+  background-color: rgba($color: $color-primary, $alpha: 0.3);
+  border-radius: 10%;
+  top: 40%;
+  left: 70%;
+  padding: 20px;
+  width: 300px;
+
+  .row {
+    margin-bottom: 5px;
+  }
+
+  input:not([type="submit"]),
+  textarea {
+    background-color: $color-conten;
+    color: $color-secondary;
+    width: 85%;
+    margin: 0 0 3px;
+    padding: 10px 15px;
+    height: 10px;
+    line-height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: 0;
+    transition: all 0.5s ease-out;
+  }
+
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+
+  input:not([type="submit"]):focus,
+  textarea:focus {
+  border-color: $color-primary;
+  }
+
+  input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 12px;
+    line-height: 20px;
+    height: 40px;
+    background-color: $color-secondary;
+    color: #fff;
+    border: 0;
+    transition: all 0.5s ease-out;
+    border-radius: 5px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: $color-primary;
+  }
+
+}
+*::-webkit-input-placeholder {
+  opacity: 1;
+  color: $color-secondary;
+}
+
+label.error {
+  font-weight: 700;
+  display: block;
+  color: brown;
+  font-size: 14px;
+}
+
+#content-form {
+  position: relative;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  width: 100%;
+  height: 550px;
+  z-index: -1;
+
+  .icon-form {
+    position: absolute;
+    margin: 2px 2px 2px 2px;
+    top: 20%;
+    left: 20%;
+  }
+  span {
+      position: absolute;
+      color: $color-secondary;
+      text-transform: lowercase;
+      font-family: $font-label;
+      bottom: 0%;
+      margin: 2px 5px 2px 5px;
+      font-weight: 800;
+      font-size: 40px;
+    }
+  #paragraf-form {
+    position: absolute;
+    text-align: justify;
+    width: 25%;
+    height: 40%;
+    top: 40%;
+    left: 20%;
+    font-size: 18px;
+  }
+}
+
+#footer_slider {
+  position: absolute;
+  display: flex;
+  right: 10%;
+  bottom: 5%;
+
+  .foodSlides {
+  
+    span {
+      position: absolute;
+      color: $color-secondary;
+      text-transform: lowercase;
+      font-family: $font-label;
+      font-weight: 800;
+      font-size: 35px;
+    }
+  }
+}
+
+@media (max-width: 320.608px) {
+  
+  header {
+
+    width: 100%;
+
+    #main-header {
+      width: 100%;
+      position: fixed;
+  
+      .main-logo {
+        position: absolute;
+  
+        .main-icon-header {
+         
+          img {
+            width: 30px;
+          }
+          
+          .main-brand {
+            position: fixed;
+            top: 15px;
+            left: 70px;
+            font-size: 20px;
+  
+          }
+        }
+      }
+  
+      .main-call {
+        position: fixed;
+  
+        .call-icon {
+          left: 10px;
+          top: 80px;
+
+          img {
+            width: 20px;
+
+          }
+
+          .call-numb {
+            
+            small {
+              font-size: 10px;
+              left: 40px;
+            }
+
+            h5 {
+              font-size: 12px;
+              left: 30px;
+              top: 100px;
+            }
+          }
+        }
+  
+      }
+
+      .main-maill {
+        position: fixed;
+  
+        .maill-icon {
+          left: 150px;
+          top: 80px;
+
+          img {
+            width: 20px;
+
+          }
+
+          .maill-adrs {
+            
+            small {
+              font-size: 10px;
+              left: 180px;
+            }
+
+            h5 {
+              font-size: 12px;
+              left: 165px;
+              top: 100px;
+            }
+          }
+        }
+      }
+
+      .btn-header {
+
+        .btn-org {
+          position: fixed;
+          left: 150px;
+          top: 10px;
+         }
+
+         button {
+          position: fixed;
+          font-size: 10px;
+         
+         }
+      }
+    }
+  }
+
+  #hamburger {
+    display: block;
+    background-color: $color-primary;
+  }
+
+  #hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -moz-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+  }
+
+  #hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -moz-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #main-menu {
+    position: absolute;
+    top: 120px;
+  }
+
+  .list-menu {
+    position: fixed;
+    left: -200%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: $color-secondary;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  
+    .list {
+      margin: 16px 0;
+    }
+    .list-menu.active {
+      left: 0;
+    }
+  }
+
+  #btn-search {
+    position: absolute;
+    left: 125px;
+    top: 160px;
+  }
+
+  #main-media-social {
+    top: 130px;
+  }
+  
+}
